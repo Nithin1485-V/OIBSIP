@@ -1,532 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Nithin | Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
+    <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+    <!-- Background Image -->
+    <img src="Images/bg.jpg" alt="Background" class="background-image">
 
-    <header>
-        <nav class="navbar">
+    <div class="container">
 
-            <a href="#home" class="logo">
-                NITHIN <span>. V</span>
-            </a>
+        <div class="converter-card">
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <h1>🌡️ Temperature Converter</h1>
 
-        </nav>
-    </header>
-
-
-    <!-- ================= HERO SECTION ================= -->
-
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <p class="intro-text">HELLO, I'M</p>
-
-            <h1>
-                Nithin V
-            </h1>
-
-            <h2>
-                Frontend Developer
-            </h2>
-
-            <p class="hero-description">
-                I create modern, responsive and user-friendly websites
-                with clean designs and smooth user experiences.
+            <p class="subtitle">
+                Convert temperatures between Celsius, Fahrenheit and Kelvin
             </p>
 
-            <div class="hero-buttons">
+            <div class="input-group">
+                <label for="temperature">Temperature</label>
 
-                <a href="#projects" class="btn primary-btn">
-                    View My Work
-                </a>
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter temperature"
+                    step="any"
+                >
+            </div>
 
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
-                </a>
+            <div class="input-group">
+
+                <label for="unit">Convert From</label>
+
+                <select id="unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+
+            </div>
+
+            <button id="convertBtn">
+                Convert Temperature
+            </button>
+
+            <p id="errorMessage" class="error"></p>
+
+            <div class="results">
+
+                <h2>Converted Temperature</h2>
+
+                <div class="result-box">
+                    <span>Celsius</span>
+                    <strong id="celsiusResult">-- °C</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>Fahrenheit</span>
+                    <strong id="fahrenheitResult">-- °F</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>Kelvin</span>
+                    <strong id="kelvinResult">-- K</strong>
+                </div>
 
             </div>
 
         </div>
 
+    </div>
 
-        <!-- Profile Image -->
-
-        <div class="hero-image">
-
-            <div class="image-circle">
-                <img src="Images/EDIT1.jpg" alt="Nithin Profile Photo">
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT SECTION ================= -->
-
-    <section class="about section" id="about">
-
-        <div class="section-title">
-
-            <p>GET TO KNOW ME</p>
-
-            <h2>
-                About <span>Me</span>
-            </h2>
-
-        </div>
-
-
-        <div class="about-container">
-
-            <div class="about-image">
-
-                <img src="Images/front.png" alt="About Nithin">
-
-            </div>
-
-
-            <div class="about-content">
-
-                <h3>
-                    Passionate About Building Digital Experiences
-                </h3>
-
-                <p>
-                    I'm a passionate aspiring web developer who enjoys creating
-                    modern, responsive and user-friendly websites. I am interested
-                    in frontend development and continuously improve my skills by
-                    building practical projects.
-                </p>
-
-                <p>
-                    I enjoy turning creative ideas into clean and functional digital
-                    experiences while learning new technologies and improving my
-                    problem-solving skills.
-                </p>
-
-                <a href="#contact" class="btn primary-btn">
-                    Let's Connect
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS SECTION ================= -->
-
-    <section class="skills section" id="skills">
-
-        <div class="section-title">
-
-            <p>WHAT I KNOW</p>
-
-            <h2>
-                My <span>Skills</span>
-            </h2>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-
-            <div class="skill-card">
-
-                <i class="fa-brands fa-html5"></i>
-
-                <h3>HTML5</h3>
-
-                <p>
-                    Building structured and semantic web pages.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fa-brands fa-css3-alt"></i>
-
-                <h3>CSS3</h3>
-
-                <p>
-                    Creating responsive and visually attractive layouts.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fa-brands fa-js"></i>
-
-                <h3>JavaScript</h3>
-
-                <p>
-                    Adding interaction and functionality to websites.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fa-brands fa-react"></i>
-
-                <h3>React</h3>
-
-                <p>
-                    Building modern and reusable user interfaces.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fa-brands fa-python"></i>
-
-                <h3>Python</h3>
-
-                <p>
-                    Learning programming and solving problems with Python.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fa-brands fa-github"></i>
-
-                <h3>Git & GitHub</h3>
-
-                <p>
-                    Managing projects and tracking code changes.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS SECTION ================= -->
-
-    <section class="projects section" id="projects">
-
-        <div class="section-title">
-
-            <p>MY RECENT WORK</p>
-
-            <h2>
-                Featured <span>Projects</span>
-            </h2>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <!-- PROJECT 1 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <img src="Images/pr1.png"
-                         alt="Student Management System Project">
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <h3>
-                        Student Management System
-                    </h3>
-
-                    <p>
-                        A modern student management interface designed to
-                        organize and manage student information efficiently.
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>React</span>
-                        <span>Tailwind</span>
-
-                    </div>
-
-
-                    <div class="project-links">
-
-                        <a href="#" class="project-btn">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            Live Demo
-                        </a>
-
-
-                        <a href="#" class="project-btn">
-                            <i class="fa-brands fa-github"></i>
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 2 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <img src="Images/pr2.png"
-                         alt="Personal Portfolio Project">
-
-                </div>
-
-
-                <div class="project-content">
-
-                    <h3>
-                        Personal Portfolio
-                    </h3>
-
-                    <p>
-                        A modern and responsive portfolio website designed
-                        to showcase skills, projects and professional information.
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-
-                    </div>
-
-
-                    <div class="project-links">
-
-                        <a href="#" class="project-btn">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            Live Demo
-                        </a>
-
-
-                        <a href="#" class="project-btn">
-                            <i class="fa-brands fa-github"></i>
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CONTACT SECTION ================= -->
-
-    <section class="contact section" id="contact">
-
-        <div class="section-title">
-
-            <p>GET IN TOUCH</p>
-
-            <h2>
-                Let's <span>Connect</span>
-            </h2>
-
-        </div>
-
-
-        <div class="contact-container">
-
-
-            <!-- Contact Information -->
-
-            <div class="contact-info">
-
-                <h3>
-                    Have a project in mind?
-                </h3>
-
-                <p>
-                    I'm always interested in learning, collaborating and
-                    working on exciting new projects. Feel free to contact me.
-                </p>
-
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-user"></i>
-
-                    <div>
-
-                        <span>Name</span>
-
-                        <h4>Nithin V</h4>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    <div>
-
-                        <span>Email</span>
-
-                        <h4>nithinv1408@gmail.com</h4>
-
-                    </div>
-
-                </div>
-
-
-                <div class="social-links">
-
-                    <a href="#" aria-label="GitHub">
-
-                        <i class="fa-brands fa-github"></i>
-
-                    </a>
-
-
-                    <a href="#" aria-label="LinkedIn">
-
-                        <i class="fa-brands fa-linkedin-in"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Contact Form -->
-
-            <form class="contact-form">
-
-                <div class="form-group">
-
-                    <input type="text"
-                           placeholder="Your Name"
-                           required>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <input type="email"
-                           placeholder="Your Email"
-                           required>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <textarea placeholder="Your Message"
-                              required></textarea>
-
-                </div>
-
-
-                <button type="submit" class="btn primary-btn">
-
-                    Send Message
-
-                    <i class="fa-solid fa-paper-plane"></i>
-
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <a href="#home" class="footer-logo">
-
-            NITHIN <span>. V</span>
-
-        </a>
-
-
-        <p>
-            © 2026 Nithin. All Rights Reserved.
-        </p>
-
-
-        <p class="footer-text">
-
-            Built with HTML & CSS
-
-        </p>
-
-    </footer>
-
+    <script src="script.js"></script>
 
 </body>
-
 </html>
