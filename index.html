@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Audi | Future is an Attitude</title>
+    <title>Nithin | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVIGATION ================= -->
 
     <header>
         <nav class="navbar">
 
-            <div class="logo">
-                AUDI
-            </div>
+            <a href="#home" class="logo">
+                NITHIN <span>. V</span>
+            </a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#models">Models</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
@@ -41,185 +47,44 @@
 
     <section class="hero" id="home">
 
-        <div class="hero-overlay"></div>
-
         <div class="hero-content">
 
-            <p class="hero-small-text">
-                AUDI RS PERFORMANCE
-            </p>
+            <p class="intro-text">HELLO, I'M</p>
 
             <h1>
-                Progress<br>
-                Starts With You.
+                Nithin V
             </h1>
 
+            <h2>
+                Frontend Developer
+            </h2>
+
             <p class="hero-description">
-                Experience precision engineering, iconic design,
-                and the future of performance.
+                I create modern, responsive and user-friendly websites
+                with clean designs and smooth user experiences.
             </p>
 
-            <a href="#models" class="btn">
-                Explore Models
-            </a>
+            <div class="hero-buttons">
 
-        </div>
+                <a href="#projects" class="btn primary-btn">
+                    View My Work
+                </a>
 
-    </section>
-
-
-    <!-- ================= FEATURE SECTION ================= -->
-
-    <section class="features">
-
-        <div class="section-title">
-
-            <p>WHY AUDI</p>
-
-            <h2>
-                Engineered for the Extraordinary
-            </h2>
-
-        </div>
-
-
-        <div class="feature-container">
-
-            <div class="feature-card">
-
-                <div class="number">01</div>
-
-                <h3>Performance</h3>
-
-                <p>
-                    Powerful engines and precise handling designed
-                    to deliver an unforgettable driving experience.
-                </p>
-
-            </div>
-
-
-            <div class="feature-card">
-
-                <div class="number">02</div>
-
-                <h3>Innovation</h3>
-
-                <p>
-                    Advanced technology built to make every journey
-                    smarter, safer, and more connected.
-                </p>
-
-            </div>
-
-
-            <div class="feature-card">
-
-                <div class="number">03</div>
-
-                <h3>Design</h3>
-
-                <p>
-                    Bold styling and modern craftsmanship that make
-                    Audi instantly recognizable.
-                </p>
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
 
             </div>
 
         </div>
 
-    </section>
 
+        <!-- Profile Image -->
 
-    <!-- ================= MODELS SECTION ================= -->
+        <div class="hero-image">
 
-    <section class="models" id="models">
-
-        <div class="section-title">
-
-            <p>EXPLORE THE RANGE</p>
-
-            <h2>
-                Choose Your Audi
-            </h2>
-
-        </div>
-
-
-        <div class="model-grid">
-
-
-            <div class="model-card">
-
-                <img 
-                    src="images/front cover.jpg"
-                    alt="Audi Sports Car"
-                >
-
-                <div class="model-info">
-
-                    <h3>Audi RS</h3>
-
-                    <p>
-                        Performance without compromise.
-                    </p>
-
-                    <a href="#">
-                        Discover →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="model-card">
-
-                <img 
-                    src="images/model3.avif"
-                    alt="Audi Car"
-                >
-
-                <div class="model-info">
-
-                    <h3>Audi e-tron</h3>
-
-                    <p>
-                        The future of electric mobility.
-                    </p>
-
-                    <a href="#">
-                        Discover →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="model-card">
-
-                <img 
-                    src="images/model1.jpg"
-                    alt="Luxury Car"
-                >
-
-                <div class="model-info">
-
-                    <h3>Audi Q Series</h3>
-
-                    <p>
-                        Built for every adventure.
-                    </p>
-
-                    <a href="#">
-                        Discover →
-                    </a>
-
-                </div>
-
+            <div class="image-circle">
+                <img src="Images/EDIT1.jpg" alt="Nithin Profile Photo">
             </div>
 
         </div>
@@ -229,38 +94,408 @@
 
     <!-- ================= ABOUT SECTION ================= -->
 
-    <section class="about" id="about">
+    <section class="about section" id="about">
 
-        <div class="about-image">
+        <div class="section-title">
 
-            <img 
-                src="images/model3.avif"
-                alt="Audi Car"
-            >
+            <p>GET TO KNOW ME</p>
+
+            <h2>
+                About <span>Me</span>
+            </h2>
 
         </div>
 
 
-        <div class="about-content">
+        <div class="about-container">
 
-            <p class="about-small-text">
-                THE AUDI EXPERIENCE
-            </p>
+            <div class="about-image">
+
+                <img src="Images/front.png" alt="About Nithin">
+
+            </div>
+
+
+            <div class="about-content">
+
+                <h3>
+                    Passionate About Building Digital Experiences
+                </h3>
+
+                <p>
+                    I'm a passionate aspiring web developer who enjoys creating
+                    modern, responsive and user-friendly websites. I am interested
+                    in frontend development and continuously improve my skills by
+                    building practical projects.
+                </p>
+
+                <p>
+                    I enjoy turning creative ideas into clean and functional digital
+                    experiences while learning new technologies and improving my
+                    problem-solving skills.
+                </p>
+
+                <a href="#contact" class="btn primary-btn">
+                    Let's Connect
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS SECTION ================= -->
+
+    <section class="skills section" id="skills">
+
+        <div class="section-title">
+
+            <p>WHAT I KNOW</p>
 
             <h2>
-                Designed for Those Who Move Forward.
+                My <span>Skills</span>
             </h2>
 
-            <p>
-                Audi represents a combination of performance,
-                progressive design, and innovative technology.
-                Every vehicle is created to turn everyday driving
-                into an extraordinary experience.
-            </p>
+        </div>
 
-            <a href="#contact" class="btn">
-                Learn More
-            </a>
+
+        <div class="skills-grid">
+
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-html5"></i>
+
+                <h3>HTML5</h3>
+
+                <p>
+                    Building structured and semantic web pages.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-css3-alt"></i>
+
+                <h3>CSS3</h3>
+
+                <p>
+                    Creating responsive and visually attractive layouts.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-js"></i>
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    Adding interaction and functionality to websites.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-react"></i>
+
+                <h3>React</h3>
+
+                <p>
+                    Building modern and reusable user interfaces.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-python"></i>
+
+                <h3>Python</h3>
+
+                <p>
+                    Learning programming and solving problems with Python.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-github"></i>
+
+                <h3>Git & GitHub</h3>
+
+                <p>
+                    Managing projects and tracking code changes.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS SECTION ================= -->
+
+    <section class="projects section" id="projects">
+
+        <div class="section-title">
+
+            <p>MY RECENT WORK</p>
+
+            <h2>
+                Featured <span>Projects</span>
+            </h2>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <img src="Images/pr1.png"
+                         alt="Student Management System Project">
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Student Management System
+                    </h3>
+
+                    <p>
+                        A modern student management interface designed to
+                        organize and manage student information efficiently.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>React</span>
+                        <span>Tailwind</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a href="#" class="project-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+
+
+                        <a href="#" class="project-btn">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <img src="Images/pr2.png"
+                         alt="Personal Portfolio Project">
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Personal Portfolio
+                    </h3>
+
+                    <p>
+                        A modern and responsive portfolio website designed
+                        to showcase skills, projects and professional information.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a href="#" class="project-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+
+
+                        <a href="#" class="project-btn">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact section" id="contact">
+
+        <div class="section-title">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>
+                Let's <span>Connect</span>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-container">
+
+
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+
+                <h3>
+                    Have a project in mind?
+                </h3>
+
+                <p>
+                    I'm always interested in learning, collaborating and
+                    working on exciting new projects. Feel free to contact me.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <div>
+
+                        <span>Name</span>
+
+                        <h4>Nithin V</h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <span>Email</span>
+
+                        <h4>nithinv1408@gmail.com</h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="GitHub">
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+
+                    <a href="#" aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+
+            <form class="contact-form">
+
+                <div class="form-group">
+
+                    <input type="text"
+                           placeholder="Your Name"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <input type="email"
+                           placeholder="Your Email"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <textarea placeholder="Your Message"
+                              required></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn primary-btn">
+
+                    Send Message
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </form>
 
         </div>
 
@@ -269,28 +504,29 @@
 
     <!-- ================= FOOTER ================= -->
 
-    <footer id="contact">
+    <footer>
 
-        <div class="footer-logo">
-            AUDI
-        </div>
+        <a href="#home" class="footer-logo">
 
+            NITHIN <span>. V</span>
 
-        <div class="footer-links">
-
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">YouTube</a>
-
-        </div>
+        </a>
 
 
         <p>
-            © 2026 Audi. All rights reserved.
+            © 2026 Nithin. All Rights Reserved.
+        </p>
+
+
+        <p class="footer-text">
+
+            Built with HTML & CSS
+
         </p>
 
     </footer>
 
 
 </body>
+
 </html>

@@ -1,43 +1,25 @@
- Audi-Inspired Landing Page
+ Personal Portfolio Website
 
-A modern and responsive static landing page inspired by the Audi car brand. This project was created as part of a web development task to practice fundamental HTML and CSS concepts.
+A modern and responsive personal portfolio website created using **HTML5 and CSS3**. This project showcases my profile, skills, projects, and contact information in a clean and professional design.
 
- Project Objective
+Features
 
-The objective of this project is to create a visually polished landing page for a product, service, or brand using only HTML5 and CSS3.
+- Sticky navigation bar
+- Smooth scrolling between sections
+- Profile / hero section
+- About Me section
+- Technical skills grid
+- Featured projects section
+- Contact information and contact form
+- GitHub and LinkedIn social links
+- Responsive design for desktop, tablet, and mobile
+- Consistent dark theme and branding
+- Modern UI with hover effects and animations
 
-The Audi-inspired landing page focuses on modern design, luxury, performance, and responsive layout.
-
----
-
- Features
-
-- Fixed navigation bar
-- Navigation links for Home, Models, About, and Contact
-- Full-screen hero section
-- Headline and subheadline
-- Call-to-action button
-- Features section
-- Car models section
-- About section
-- Footer with social media links
-- Responsive design for mobile and desktop devices
-- CSS Flexbox and Grid layouts
-- Consistent black, white, and red colour palette
-- Hover effects and smooth transitions
-- Clean and readable typography
-
----
-
-Technologies Used
+  Technologies Used
 
 - HTML5
 - CSS3
-- CSS Flexbox
-- CSS Grid
 - Google Fonts
-
-
-
-
+- Font Awesome Icons
 
